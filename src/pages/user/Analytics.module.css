@@ -1,0 +1,99 @@
+.container {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.timeRangeSelect {
+  width: 150px;
+}
+
+.chartRow {
+  margin-top: 16px;
+}
+
+.chartCard {
+  height: 400px;
+}
+
+.progressCard {
+  margin-top: 16px;
+  height: 400px;
+}
+
+.recommendationsCard {
+  margin-top: 16px;
+}
+
+.recommendationsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.recommendationItem {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+}
+
+.recommendationIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #eef2ff;
+  border-radius: 50%;
+  color: #4f46e5;
+  font-size: 24px;
+}
+
+.recommendationContent {
+  flex: 1;
+}
+
+.insightsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.insightItem {
+  padding: 16px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+}
+
+:global(.dark) .recommendationItem,
+:global(.dark) .insightItem {
+  background-color: #1f2937;
+}
+
+:global(.dark) .recommendationIcon {
+  background-color: #374151;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actions {
+    margin-top: 12px;
+  }
+}

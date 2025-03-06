@@ -1,0 +1,128 @@
+.container {
+  width: 100%;
+}
+
+.profileCard {
+  margin-bottom: 16px;
+}
+
+.profileHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.avatar {
+  margin-bottom: 16px;
+}
+
+.profileInfo {
+  width: 100%;
+}
+
+.bio {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 16px 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.editButton {
+  margin-top: 16px;
+}
+
+.editForm {
+  width: 100%;
+}
+
+.avatarUploader {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.achievementsCard {
+  margin-top: 16px;
+}
+
+.achievementIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f3f4f6;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.tabsCard {
+  height: 100%;
+}
+
+.subjectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.subjectCard {
+  height: 100%;
+}
+
+.subjectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.subjectProgress {
+  margin-bottom: 16px;
+}
+
+.progressLabel {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.settingsSection {
+  margin-bottom: 24px;
+}
+
+.subscriptionInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .subscriptionInfo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .subjectsGrid {
+    grid-template-columns: 1fr;
+  }
+}

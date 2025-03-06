@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.chartRow {
+  margin-top: 1rem;
+}
+
+.chartCard {
+  height: 400px;
+}
+
+.performanceCard {
+  height: 400px;
+}
+
+.performanceItem {
+  margin-bottom: 1.5rem;
+}
+
+.performanceLabel {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.activitiesCard {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header > div {
+    margin-top: 1rem;
+  }
+}

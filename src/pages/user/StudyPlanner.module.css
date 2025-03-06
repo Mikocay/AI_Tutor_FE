@@ -1,0 +1,154 @@
+.container {
+  width: 100%;
+}
+
+.calendarCard {
+  margin-bottom: 16px;
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.calendar {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.events {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.eventText {
+  font-size: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sessionsCard {
+  margin-bottom: 16px;
+}
+
+.sessionsList {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.sessionTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sessionTime,
+.sessionDate {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.sessionDesc {
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.goalsCard {
+  margin-bottom: 16px;
+}
+
+.goalsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.goalsList {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.goalTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goalDeadline {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.goalProgress {
+  margin-top: 8px;
+}
+
+.progressLabel {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.progressBar {
+  height: 6px;
+  background-color: #e5e7eb;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: #4f46e5;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+}
+
+.emptyButton {
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .calendarHeader,
+  .goalsHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .calendarHeader button,
+  .goalsHeader button {
+    margin-top: 8px;
+  }
+
+  .sessionTitle,
+  .goalTitle {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sessionTitle span,
+  .goalTitle span {
+    margin-top: 4px;
+  }
+}
